@@ -1,5 +1,5 @@
 Hello World
-===========
+____________
 
 This examples shows you a very simple hello world job. All we want to do is to run a docker container on InfraBox which prints "Hello World".
 
