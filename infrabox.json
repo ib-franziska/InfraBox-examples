@@ -6,7 +6,7 @@
         "infrabox_file": "hello_world/infrabox.json"
     }, {
 		"type": "workflow",
-		"name": "second-flow",
+		"name": "first-flow",
 		"infrabox_file": "cpp_example/infrabox.json",
 		"depends_on": ["first-flow"]
 	}]
