@@ -13,5 +13,20 @@
 		"name": "upload-workflow",
 		"infrabox_file": "upload_testresult/infrabox.json",
 		"depends_on": ["hello-workflow", "cpp-workflow"]
+	}, {
+		"type": "workflow",
+		"name": "badge-workflow",
+		"infrabox_file": "badges/infrabox.json",
+		"depends_on": ["hello-workflow", "cpp-workflow"]
+	}, {
+		"type": "workflow",
+		"name": "build-args-workflow",
+		"infrabox_file": "build_arguments/infrabox.json",
+		"depends_on": ["cpp-workflow", "badge-workflow"]
+	}, {
+		"type": "workflow",
+		"name": "caching-workflow",
+		"infrabox_file": "caching/infrabox.json",
+		"depends_on": ["build-args-workflow", "badge-workflow"]
 	}]
 }
