@@ -2,12 +2,16 @@
     "version": 1,
     "jobs": [{
         "type": "workflow",
-        "name": "first-flow",
+        "name": "hello-workflow",
         "infrabox_file": "hello_world/infrabox.json"
     }, {
 		"type": "workflow",
-		"name": "first-flow",
-		"infrabox_file": "cpp_example/infrabox.json",
-		"depends_on": ["first-flow"]
+		"name": "cpp-workflow",
+		"infrabox_file": "cpp_example/infrabox.json"
+	}, {
+		"type": "workflow",
+		"name": "upload-workflow",
+		"infrabox_file": "upload_testresult/infrabox.json",
+		"depends_on": ["hello-workflow", "cpp-workflow"]
 	}]
 }
