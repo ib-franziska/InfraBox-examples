@@ -4,5 +4,9 @@
         "type": "workflow",
         "name": "first-flow",
         "infrabox_file": "hello_world/infrabox.json"
-    }]
+    }, {
+		"type": "workflow",
+		"name": "second-flow",
+		"infrabox_file": "cpp_example"
+	}]
 }

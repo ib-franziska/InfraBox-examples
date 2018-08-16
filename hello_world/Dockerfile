@@ -1,3 +1,3 @@
 FROM alpine
 
-CMD echo "Hallo Franzi"
+CMD echo "Hello World"
