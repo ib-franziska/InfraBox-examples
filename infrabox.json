@@ -1,4 +1,8 @@
 {
     "version": 1,
-    "jobs": []
+    "jobs": [{
+        "type": "workflow",
+        "name": "first-flow",
+        "infrabox_file": "hello_world/infrabox.json"
+    }]
 }
